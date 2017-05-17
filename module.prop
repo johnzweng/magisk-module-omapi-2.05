@@ -1,7 +1,7 @@
-id=template
-name=Template Module
-version=v1
+id=at.zweng.magisk.openmobile205
+name=Smartcard Service
+version=1.0
 versionCode=1
-author=topjohnwu
-description=A short description
+author=johnzweng
+description=Installs SmartcardService as privileged system app. This is the implementation of the Open Mobile API (OMAPI) 2.05. Apps which want to use this must be grant the Smartcard permission in the app's setting.
 template=3

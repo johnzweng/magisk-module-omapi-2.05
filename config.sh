@@ -2,21 +2,21 @@
 #
 # Magisk
 # by topjohnwu
-# 
+#
 # This is a template zip for developers
 #
 ##########################################################################################
 ##########################################################################################
-# 
+#
 # Instructions:
-# 
+#
 # 1. Place your files into system folder (delete the placeholder file)
 # 2. Fill in your module's info into module.prop
 # 3. Configure the settings in this file (common/config.sh)
 # 4. For advanced features, add shell commands into the script files under common:
 #    post-fs-data.sh, service.sh
 # 5. For changing props, add your additional/modified props into common/system.prop
-# 
+#
 ##########################################################################################
 
 ##########################################################################################
@@ -27,7 +27,7 @@
 
 # This will be the folder name under /magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=template
+MODID=at.zweng.magisk.openmobile205
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
@@ -49,9 +49,24 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
-  ui_print "*******************************"
+  ui_print "***************************************"
+  ui_print "***************************************"
+  ui_print "   Magisk Module: SmartcardService"
+  ui_print "  ----------------------------------"
+  ui_print "   (aka Open Mobile API 2.05)"
+  ui_print "   "
+  ui_print "   This Magisk module installs "
+  ui_print "   SmartcardService as a privileged "
+  ui_print "   system service."
+  ui_print "   "
+  ui_print "   This is needed for (mostly banking)"
+  ui_print "   apps, which want to communicate with"
+  ui_print "   the Secure Element in the SIM card."
+  ui_print "   "
+  ui_print "   see github/johnzweng"
+  ui_print "   (XDA user androcheck)"
+  ui_print "***************************************"
+  ui_print "***************************************"
 }
 
 ##########################################################################################
